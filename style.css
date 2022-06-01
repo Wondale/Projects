@@ -1,0 +1,40 @@
+* {
+    margin: 7px;
+    box-sizing: border-box;
+  }
+  
+  div {
+    padding: 5px;
+    border: 1px solid Tomato;
+  }
+  
+  div.column {
+    float: left;
+    height: 500px;
+  }
+  div.side {
+    width: 22%;
+  }
+  div.main {
+    width: 52%;
+    
+  }
+  div.footer {
+    clear: both;
+  }
+  
+  .h1 {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .h2 {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .p1 {
+    font-family: "Arial", sans-serif;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
