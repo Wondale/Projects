@@ -4,16 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photo API</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer type="module" src="./js/index.js"></script>
+    <title>Form</title>
   </head>
   <body>
-    <div class="container"></div>
-    <div class="container">
-      <div class="card"></div>
-      <button id="button">Get Random Picture</button>
-    </div>
-
-    <script type="module" src="main.js"></script>
+    <form id="form" action="/">
+      <h1>Form</h1>
+      <div class="input-control">
+        <label for="user's Name" class="label">User's Name</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="Write name..."
+        />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="email" class="label">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="example@domain.com"
+        />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <div id="input-gender">
+          <h4>User's Gender:</h4>
+          <div class="input-group">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="none" name="gender" value="none" checked />
+            <label for="other">Other</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-control">
+        <h4>Comment about your web experience.</h4>
+        <textarea
+          id="comment"
+          cols="50"
+          rows="4"
+          placeholder="Please comment about your web experience"
+        ></textarea>
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <div class="input-check">
+          <input type="checkbox" id="input-checkbox" name="terms" />
+          <p>
+            I have read and accept
+            <a href="#">Terms and Conditions</a>
+          </p>
+          <div class="error"></div>
+        </div>
+      </div>
+      <button type="submit">Submit Your Input</button>
+    </form>
   </body>
 </html>
